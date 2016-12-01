@@ -32,7 +32,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end 
 
   test "should get new" do 
-    get users_new_url
+    get login_path
     assert_response :success
   end 
 end
