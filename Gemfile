@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 
+gem 'pry', '~> 0.10.4'
 gem 'bcrypt',         '3.1.11'
 gem 'bootstrap-sass', '3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
