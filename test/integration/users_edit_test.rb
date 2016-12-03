@@ -1,6 +1,5 @@
 require 'test_helper'
-
-class UsersEditTest < ActionDispatch::IntergrationTest
+class UsersEditTest < ActionDispatch::IntegrationTest
 
   def setup
     @user = users(:samsung)
@@ -16,9 +15,10 @@ class UsersEditTest < ActionDispatch::IntergrationTest
                                               password_confirmation: "bar" } }
 
     assert_template 'users/edit'
+  end
 
-    test "successful edit" do
-      log_in_as(@user)
+  test "successful edit" do
+    log_in_as(@user)
     get edit_user_path(@user)
     assert_template 'users/edit'
     name  = "Foo Bar"
