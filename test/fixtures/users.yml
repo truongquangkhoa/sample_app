@@ -12,21 +12,15 @@ samsung:
   email: samsung@gmail.com
   password_digest: <%= User.digest('password') %>
   admin: true
-<<<<<<< HEAD
   activated: true
   activated_at: <%= Time.zone.now %>
-=======
->>>>>>> origin
 
 skt:
   name: skt
   email: skt@gmail.com
   password_digest: <%= User.digest('password') %>
-<<<<<<< HEAD
   activated: true
   activated_at: <%= Time.zone.now %>
-=======
->>>>>>> origin
 
 lana:
   name: Lana Kane
