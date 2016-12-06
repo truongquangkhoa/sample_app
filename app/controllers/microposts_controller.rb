@@ -4,6 +4,7 @@ class MicropostsController < ApplicationController
   before_action :correct_user, only: :destroy
 
   def create
+    binding.pry
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
       flash[:success] = "Micropost created!"
@@ -15,6 +16,7 @@ class MicropostsController < ApplicationController
   end
 
   def destroy
+    # binding.pry
     @micropost.destroy
     flash[:success] = "Micropost deleted"
     redirect_to request.referrer || root_url
@@ -24,6 +26,7 @@ class MicropostsController < ApplicationController
   private
 
    def micropost_params
+    # binding.pry
      params.require(:micropost).permit(:content, :picture)
    end
 
